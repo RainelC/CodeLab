@@ -1,0 +1,1 @@
+{'1': {'nombre': 'juan'}, 'id': {'Laptop': 'Laptop', 'Buena': 'Buena', 1500.0: 1500.0, 'isActive': False}}
