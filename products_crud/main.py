@@ -11,7 +11,9 @@
 from manage_product import *
 import database.data  as db
 
-print(db.getData())
 
 # add_product("Laptop", "Buena", 1500.00)
-delete_product("id")
+# print(db.getData())
+print(get_products())
+
+# delete_product(1)
