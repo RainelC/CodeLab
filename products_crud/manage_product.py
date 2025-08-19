@@ -3,12 +3,14 @@ import database.data  as db
 data = db.getData()
 
 def get_products():
-    return data
+    return {k: v for k,v in data.items() if v['isActive'] is True}
 
 def add_product(name: str, description: str, price: float):
     try:
-        # id = 
-        data["id"] = {"name": name, "description": description, "price": price, "isActive": True}
+        id = 1
+        if data != {}:
+            id = list(data.keys())[-1] + 1
+        data[id] = {"name": name, "description": description, "price": price, "isActive": True}
         db.setData(data)
     except Exception as error:
         print(error)
